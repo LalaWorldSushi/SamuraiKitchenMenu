@@ -1,4 +1,4 @@
-SAMURAI KITCHEN DIGITAL MENU - COMPLETE DINNER EDITION
+SAMURAI KITCHEN DIGITAL MENU - FLAT GITHUB UPLOAD EDITION
 
 Open index.html to preview the menu locally.
 
@@ -8,8 +8,9 @@ The site is fully static:
 - No account
 - No paid service
 
-For GitHub Pages, upload every file and folder in this package without changing
-the folder structure. The website entry point is index.html.
+For GitHub Pages, select and upload every extracted file in one operation.
+This edition uses no folders, which avoids browser folder-upload problems.
+The website entry point is index.html.
 
 Important:
 - Internet access is only needed for the optional Google fonts and the external

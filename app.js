@@ -39,7 +39,7 @@ const pages = $("#menuPages");
 const lightbox = $("#lightbox");
 
 function pagePath(number) {
-  return `assets/menu/page-${String(number).padStart(2, "0")}.webp`;
+  return `page-${String(number).padStart(2, "0")}.webp`;
 }
 
 function translatePage() {

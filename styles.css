@@ -51,7 +51,7 @@ button { font: inherit; }
 .hero { min-height: calc(100svh - 74px); display: grid; grid-template-columns: 1.2fr 1fr; }
 .hero__image {
   min-height: 520px;
-  background: linear-gradient(90deg, transparent 62%, var(--cream)), url("assets/photos/hero.webp") center / cover no-repeat;
+  background: linear-gradient(90deg, transparent 62%, var(--cream)), url("hero.webp") center / cover no-repeat;
 }
 .hero__content { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: clamp(38px, 7vw, 100px); }
 .kicker { margin: 0 0 12px; color: var(--burgundy); font-size: 12px; font-weight: 700; letter-spacing: .2em; }
@@ -121,6 +121,21 @@ h2 { margin: 0; font-size: clamp(38px, 5vw, 66px); }
 .lala div:last-child > div { margin-top: 26px; color: #5f584f; font-size: 17px; line-height: 1.8; }
 .signature { margin-top: 26px; }
 .signature em { margin-left: 8px; color: var(--burgundy); font-family: "Playfair Display", serif; font-size: 34px; }
+.connect {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+  padding: 100px max(24px, calc((100vw - 1196px) / 2)); background: var(--paper);
+}
+.connect > div:first-child > p:last-child { max-width: 570px; color: var(--muted); }
+.connect__links { display: grid; gap: 12px; }
+.social-card {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 24px; border: 1px solid var(--line); border-radius: 18px; background: var(--cream);
+}
+.social-card span { font-family: "Playfair Display", serif; font-size: 26px; }
+.social-card b { color: var(--burgundy); font-size: 14px; }
+.social-card--whatsapp { border-left: 5px solid #25d366; }
+.social-card--facebook { border-left: 5px solid #1877f2; }
+.social-card--instagram { border-left: 5px solid #c13584; }
 footer { display: flex; align-items: center; justify-content: space-between; gap: 30px; padding: 44px max(24px, calc((100vw - 1196px) / 2)); background: var(--paper); }
 footer p { color: var(--muted); font-size: 13px; }
 .lightbox { width: 100vw; max-width: none; height: 100vh; max-height: none; margin: 0; padding: 24px; border: 0; background: rgba(18, 15, 12, .96); }
@@ -131,10 +146,10 @@ footer p { color: var(--muted); font-size: 13px; }
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
-  .hero__image { min-height: 52svh; background: linear-gradient(to bottom, transparent 52%, var(--cream)), url("assets/photos/hero.webp") center / cover no-repeat; }
+  .hero__image { min-height: 52svh; background: linear-gradient(to bottom, transparent 52%, var(--cream)), url("hero.webp") center / cover no-repeat; }
   .hero__content { padding-top: 20px; }
   .category-grid { grid-template-columns: repeat(2, 1fr); }
-  .delivery, .lala { grid-template-columns: 1fr; }
+  .delivery, .lala, .connect { grid-template-columns: 1fr; }
   .lala__portrait { max-width: 520px; }
 }
 @media (max-width: 620px) {
